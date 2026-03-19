@@ -67,7 +67,7 @@ public class CH6PlayerController : MonoBehaviour
 
         if (Mathf.Abs(transform.position.x) >= 2.3)
         {
-            transform.position = new Vector3(-transform.position.x, transform.position.y, transform.position.z);
+            transform.position = new Vector3(-(transform.position.x * .9f), transform.position.y, transform.position.z);
         }
 
         ticks++;
