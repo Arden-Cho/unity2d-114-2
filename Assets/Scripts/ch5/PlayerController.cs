@@ -14,17 +14,17 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.Translate(-1, 0, 0);
-            if (transform.position.x <= -12)
+            if (transform.position.x <= -3)
             {
-                transform.Translate(-2 * transform.position.x, 0, 0);
+                transform.Translate(-2 * (transform.position.x + .1f), 0, 0);
             }
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             transform.Translate(1, 0, 0);
-            if (transform.position.x >= 12)
+            if (transform.position.x >= 3)
             {
-                transform.Translate(-2 * transform.position.x, 0, 0);
+                transform.Translate(-2 * (transform.position.x + .1f), 0, 0);
             }
         }
     }

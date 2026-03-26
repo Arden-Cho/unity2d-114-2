@@ -8,12 +8,6 @@ public class RegenGenerator : MonoBehaviour
     float span = 5;
     float delta = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -22,7 +16,7 @@ public class RegenGenerator : MonoBehaviour
         {
             delta = 0;
             GameObject go = Instantiate(arrowPrefab);
-            int px = Random.Range(-6, 7);
+            int px = Random.Range(-3, 3);
             go.transform.position = new Vector3(px, 7, 0);
         }
     }

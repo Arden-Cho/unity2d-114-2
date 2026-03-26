@@ -9,12 +9,13 @@ public class ArrowGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void IncreaseDiff()
     {
-        span -= .2f;
+        if (span > .2f)
+            span -= .2f;
     }
 
     public void ResetDiff()
@@ -30,7 +31,7 @@ public class ArrowGenerator : MonoBehaviour
         {
             delta = 0;
             GameObject go = Instantiate(arrowPrefab);
-            int px = Random.Range(-6, 7);
+            int px = Random.Range(-3, 3);
             go.transform.position = new Vector3(px, 7, 0);
         }
     }

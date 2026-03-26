@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +8,7 @@ public class CH6ClearDirector : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("ch6");
-        }        
+            SceneManager.LoadScene("ch5+6");
+        }
     }
 }

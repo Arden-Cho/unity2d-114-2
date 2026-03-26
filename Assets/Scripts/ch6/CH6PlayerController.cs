@@ -62,7 +62,7 @@ public class CH6PlayerController : MonoBehaviour
 
         if (transform.position.y < -10)
         {
-            SceneManager.LoadScene("ch6");
+            SceneManager.LoadScene("ch5+6");
         }
 
         if (Mathf.Abs(transform.position.x) >= 2.3)
